@@ -4,7 +4,7 @@ const sumAll = function(int1, int2) {
 
     let sum = 0;
     for (let i = int1; i <= int2; i++) {
-        sum += 1; 
+        sum += i; 
     }
     return sum; 
 
