@@ -7,7 +7,7 @@ const sumAll = function(int1, int2) {
     const end = Math.max(int1, int2); 
 
     let sum = 0;
-    for (let i = int1; i <= int2; i++) {
+    for (let i = start; i <= end; i++) {
         sum += i; 
     }
     return sum; 
