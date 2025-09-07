@@ -1,4 +1,7 @@
-const leapYears = function() {
+const leapYears = function(year) {
+    if (!year || !Number.isInteger(int1)) return false;
+
+    
 
 };
 
