@@ -41,7 +41,7 @@ const factorial = function(num) {
     return tot;
   } else if (num > 1) {
     for (i = num; i > 1; i--) {
-      tot*i;
+      tot *= i;
     }
     return tot;
   }
