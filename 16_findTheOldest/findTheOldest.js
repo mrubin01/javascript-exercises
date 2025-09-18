@@ -7,7 +7,7 @@ const findTheOldest = function(arr) {
 
     let maxAge = oldest.death - oldest.birth;
 
-    for (let i = 1; i < people.length; i++) {
+    for (let i = 1; i < arr.length; i++) {
         let age = arr[i].death - arr[i].birth;
 
         if (age > maxAge) {
