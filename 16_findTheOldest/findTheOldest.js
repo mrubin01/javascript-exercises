@@ -5,10 +5,10 @@ const findTheOldest = function(arr) {
 
     let oldest = arr[0];
 
-    let maxAge = oldest.death - oldest.birth;
+    let maxAge = oldest.yearOfDeath - oldest.yearOfBirth;
 
     for (let i = 1; i < arr.length; i++) {
-        let age = arr[i].death - arr[i].birth;
+        let age = people[i].yearOfDeath - people[i].yearOfBirth;
 
         if (age > maxAge) {
             maxAge = age;
