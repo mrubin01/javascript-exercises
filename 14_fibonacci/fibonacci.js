@@ -6,11 +6,13 @@ const fibonacci = function(num) {
     }
 
     // this checks if the parameter has been parsed as an int and is > 0
-    if (!Number.isInteger(num) || num < 1) {
+    if (!Number.isInteger(num) || num < 0) {
         console.log("OOPS"); 
     }
 
-    if (num === 1 || num === 2) {
+    if (num === 0) {
+        return 0; 
+    } else if (num === 1 || num === 2) {
         return 1;
     }
 
