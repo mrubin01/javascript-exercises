@@ -1,7 +1,7 @@
 const fibonacci = function(num) {
     if (typeof num !== "number" && typeof num !== "string") {
         return 0;
-    } else if (typeof num === "number") {
+    } else if (typeof num === "string") {
         num = Number(num);
     }
 
