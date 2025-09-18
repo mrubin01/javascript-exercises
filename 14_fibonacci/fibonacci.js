@@ -1,7 +1,7 @@
 const fibonacci = function(num) {
-    if (typeof num !== "number" || Number.isInteger(num)) {
-        return 0;
-    }
+    //if (typeof num !== "number" || Number.isInteger(num)) {
+    //    return 0;
+    //}
 
     if (num === 1 || num === 2) {
         return 1;
