@@ -3,6 +3,8 @@ const fibonacci = function(num) {
         return 0;
     } else if (typeof num === "string") {
         num = Number(num);
+    } else if (num === "number" && num < 0) {
+        console.log("OOPS"); 
     }
 
     // this checks if the parameter has been parsed as an int and is > 0
