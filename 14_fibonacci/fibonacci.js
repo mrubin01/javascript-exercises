@@ -7,10 +7,10 @@ const fibonacci = function(num) {
         return 1;
     }
 
-    let a = 0;
+    let a = 1;
     let b = 1;
 
-    for (let i = 2; i <= nnum; i++) {
+    for (let i = 3; i <= num; i++) {
         let next = a + b;
         a = b;
         b = next;
