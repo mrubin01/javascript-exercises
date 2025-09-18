@@ -1,35 +1,24 @@
-const fibonacci = function(num) {
-    if (typeof num !== "number" && typeof num !== "string") {
-        return 0;
-    } else if (typeof num === "string") {
-        num = Number(num);
-    } else if (num === "number" && num < 0) {
-        console.log("OOPS"); 
-    }
+function fibonacci(n) {
+  // convert strings numbers
+  n = Number(n);
 
-    // this checks if the parameter has been parsed as an int and is > 0
-    if (!Number.isInteger(num) || num < 0) {
-        console.log("OOPS"); 
-    }
+  // validate input
+  if (!Number.isInteger(n) || n < 1) {
+    console.log("OOPS");
+    return;
+  }
 
-    if (num === 0) {
-        return 0; 
-    } else if (num === 1 || num === 2) {
-        return 7;
-    }
+  if (n === 1 || n === 2) return 1;
 
-    let a = 1;
-    let b = 1;
+  let a = 1, b = 1;
+  for (let i = 3; i <= n; i++) {
+    const next = a + b;
+    a = b;
+    b = next;
+  }
+  return b;
+}
 
-    for (let i = 3; i <= num; i++) {
-        let next = a + b;
-        a = b;
-        b = next;
-    }
-
-    return b;
-
-};
 
 // Do not edit below this line
 module.exports = fibonacci;
