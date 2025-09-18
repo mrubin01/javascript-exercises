@@ -16,7 +16,7 @@ const findTheOldest = function(arr) {
         }
     }
 
-    return oldest.name;
+    return oldest;
 
 };
 
